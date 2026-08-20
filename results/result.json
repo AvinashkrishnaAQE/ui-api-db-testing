@@ -1,0 +1,303 @@
+{
+  "config": {
+    "configFile": "/home/ascendqe007/Documents/ui-api-db-project/playwright.config.ts",
+    "rootDir": "/home/ascendqe007/Documents/ui-api-db-project/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "failures-only",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "results/result.json"
+        }
+      ]
+    ],
+    "reportSlowTests": null,
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/ascendqe007/Documents/ui-api-db-project/test-results/failure",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "local",
+        "name": "local",
+        "testDir": "/home/ascendqe007/Documents/ui-api-db-project/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*ContactUsTest*"
+        ],
+        "timeout": 1200000
+      },
+      {
+        "outputDir": "/home/ascendqe007/Documents/ui-api-db-project/test-results/failure",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "suite",
+        "name": "suite",
+        "testDir": "/home/ascendqe007/Documents/ui-api-db-project/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.test.ts"
+        ],
+        "timeout": 1200000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.1",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ContactUsTest.spec.ts",
+      "file": "ContactUsTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC01_ContactUsTest : Contact Us regarding Headphone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "local",
+              "projectName": "local",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Launching the application",
+                      "duration": 6263,
+                      "steps": [
+                        {
+                          "title": "Navigate to Home Page",
+                          "duration": 6256
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Entering Contact Us details",
+                      "duration": 8626,
+                      "steps": [
+                        {
+                          "title": "Selecting text Headphones from Category Dropdown",
+                          "duration": 6411
+                        },
+                        {
+                          "title": "Selecting text HP H2310 In-ear Headset from Product Dropdown",
+                          "duration": 1912
+                        },
+                        {
+                          "title": "Entering ContactUs email as headphone@test.com",
+                          "duration": 141
+                        },
+                        {
+                          "title": "Entering ContactUs Subject as Headphones that I purchased recently is awesome. I would recommend this to my friends and family.",
+                          "duration": 153
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Click on Send button of Contact Us",
+                      "duration": 1074,
+                      "steps": [
+                        {
+                          "title": "Clicking on Send Button",
+                          "duration": 1068
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Verifying Success Message of Contact Us",
+                      "duration": 1349,
+                      "steps": [
+                        {
+                          "title": "Getting text content of ContactUs Success Message",
+                          "duration": 1336
+                        },
+                        {
+                          "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
+                          "duration": 9
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2026-08-20T11:56:36.642Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiQ29udGFjdCBVcyByZWdhcmRpbmcgSGVhZHBob25lIn19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZTAwNyJ9XX19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxpbmtzIjpbeyJ1cmwiOiJodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3BsYXl3cmlnaHQvaXNzdWVzLzEzMzciLCJuYW1lIjoiSVNTVUUtMTMzNyJ9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1d3d06f8f12d40259022-0a94090192176d256384",
+          "file": "ContactUsTest.spec.ts",
+          "line": 9,
+          "column": 9
+        },
+        {
+          "title": "TC02_ContactUsTest : Contact Us regarding Speakers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "local",
+              "projectName": "local",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13528,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Launching the application",
+                      "duration": 3369,
+                      "steps": [
+                        {
+                          "title": "Navigate to Home Page",
+                          "duration": 3367
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Entering Contact Us details",
+                      "duration": 8537,
+                      "steps": [
+                        {
+                          "title": "Selecting text Speakers from Category Dropdown",
+                          "duration": 5903
+                        },
+                        {
+                          "title": "Selecting text HP Roar Wireless Speaker from Product Dropdown",
+                          "duration": 2369
+                        },
+                        {
+                          "title": "Entering ContactUs email as speakers@test.com",
+                          "duration": 121
+                        },
+                        {
+                          "title": "Entering ContactUs Subject as This is to inform you that Speakers that I purchased recently is defective. Please provide the replacement for it. Thanks!",
+                          "duration": 138
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Click on Send button of Contact Us",
+                      "duration": 1050,
+                      "steps": [
+                        {
+                          "title": "Clicking on Send Button",
+                          "duration": 1049
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Verifying Success Message of Contact Us",
+                      "duration": 321,
+                      "steps": [
+                        {
+                          "title": "Getting text content of ContactUs Success Message",
+                          "duration": 314
+                        },
+                        {
+                          "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
+                          "duration": 5
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2026-08-20T11:56:54.823Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiQ29udGFjdCBVcyByZWdhcmRpbmcgU3BlYWtlcnMifX0="
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZTAwNyJ9XX19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxpbmtzIjpbeyJ1cmwiOiJodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3BsYXl3cmlnaHQvaXNzdWVzLzE1NDciLCJuYW1lIjoiSVNTVUUtMTU0NyJ9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1d3d06f8f12d40259022-c8249a25526f73115ac5",
+          "file": "ContactUsTest.spec.ts",
+          "line": 9,
+          "column": 9
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-20T11:56:34.544Z",
+    "duration": 34092.71,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
