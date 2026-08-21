@@ -4,7 +4,7 @@ export default class HomePage {
     static readonly PASSWORD_TEXTBOX = "[name='password']";
     static readonly REMEMBER_ME_CHECKBOX = "[name='remember_me']";
     static readonly SIGN_IN_BUTTON = "#sign_in_btn";
-    static readonly LOGGED_IN_USER = "a#menuUserLink>span.hi-user";
+    static readonly LOGGED_IN_USER = "a#menuUserLink>span.hi-user-wrong";
     static readonly SIGN_IN_ERROR_MESSAGE = "#signInResultMessage.invalid";
     static readonly SIGN_OUT_LINK = "#loginMiniTitle>[translate='Sign_out']";
     static readonly CREATE_NEW_ACCOUNT_LINK = "[translate='CREATE_NEW_ACCOUNT']";

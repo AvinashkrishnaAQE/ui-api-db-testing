@@ -1,0 +1,252 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - img [ref=e6]
+    - generic [ref=e7] [cursor=pointer]: SIGN IN WITH FACEBOOK
+    - generic [ref=e8]: OR
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - textbox [ref=e12]: JamesB
+          - generic [ref=e13]: Username
+        - list
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - textbox [ref=e16]: Test321
+          - generic [ref=e17]: Password
+        - list
+      - generic [ref=e18]:
+        - checkbox [checked] [ref=e19] [cursor=pointer]
+        - generic [ref=e20]: REMEMBER ME
+      - button "SIGN IN" [active] [ref=e22] [cursor=pointer]
+    - link "Forgot your password?" [ref=e23] [cursor=pointer]:
+      - /url: javascript:void(0)
+    - link "CREATE NEW ACCOUNT" [ref=e24] [cursor=pointer]:
+      - /url: javascript:void(0)
+  - complementary [ref=e25]:
+    - list [ref=e26]:
+      - listitem [ref=e27]:
+        - link [ref=e28] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - img [ref=e29] [cursor=pointer]
+      - listitem [ref=e31]:
+        - link [ref=e32] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - img [ref=e33] [cursor=pointer]
+      - listitem [ref=e35] [cursor=pointer]:
+        - link [ref=e36] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - img [ref=e37] [cursor=pointer]
+  - banner [ref=e39]:
+    - navigation:
+      - list [ref=e40]:
+        - listitem [ref=e41]:
+          - link [ref=e42] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - img [ref=e43] [cursor=pointer]
+            - img [ref=e44] [cursor=pointer]
+        - listitem [ref=e46]:
+          - link "ShoppingCart" [ref=e47] [cursor=pointer]:
+            - /url: "#/shoppingCart"
+            - img [ref=e48] [cursor=pointer]
+          - list:
+            - listitem
+        - listitem [ref=e50]:
+          - link "UserMenu" [ref=e51] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - img [ref=e53] [cursor=pointer]
+        - listitem [ref=e55]:
+          - generic [ref=e59] [cursor=pointer]:
+            - img [ref=e61] [cursor=pointer]
+            - generic:
+              - textbox "Search AdvantageOnlineShopping.com" [ref=e63]
+              - img [ref=e65] [cursor=pointer]
+        - listitem [ref=e66]:
+          - link "CONTACT US" [ref=e67] [cursor=pointer]:
+            - /url: javascript:void(0)
+        - listitem [ref=e68]:
+          - link "POPULAR ITEMS" [ref=e69] [cursor=pointer]:
+            - /url: javascript:void(0)
+        - listitem [ref=e70]:
+          - link "SPECIAL OFFER" [ref=e71] [cursor=pointer]:
+            - /url: javascript:void(0)
+        - listitem [ref=e72]:
+          - link "OUR PRODUCTS" [ref=e73] [cursor=pointer]:
+            - /url: javascript:void(0)
+      - link "dvantage DEMO" [ref=e75] [cursor=pointer]:
+        - /url: "#/"
+        - img [ref=e76] [cursor=pointer]
+        - generic [ref=e78] [cursor=pointer]: dvantage
+        - generic [ref=e79] [cursor=pointer]: DEMO
+  - generic [ref=e80]:
+    - generic [ref=e81]:
+      - article [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - link "SpeakersCategory" [ref=e85] [cursor=pointer]:
+              - /url: javascript:void(0)
+              - generic [ref=e86] [cursor=pointer]:
+                - link "SpeakersCategoryTxt" [ref=e87] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: SPEAKERS
+                - generic [ref=e88] [cursor=pointer]: Shop Now
+            - link "TabletsCategory" [ref=e89] [cursor=pointer]:
+              - /url: javascript:void(0)
+              - generic "TabletsCategoryTxt" [ref=e90] [cursor=pointer]:
+                - link "TabletsCategoryTxt" [ref=e91] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: TABLETS
+                - generic [ref=e92] [cursor=pointer]: Shop Now
+          - generic [ref=e94]:
+            - link "LaptopsCategory" [ref=e95] [cursor=pointer]:
+              - /url: javascript:void(0)
+              - generic [ref=e96] [cursor=pointer]:
+                - link "LaptopsCategoryTxt" [ref=e97] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: LAPTOPS
+                - generic [ref=e98] [cursor=pointer]: Shop Now
+            - link "MiceCategory" [ref=e99] [cursor=pointer]:
+              - /url: javascript:void(0)
+              - generic [ref=e100] [cursor=pointer]:
+                - link "MiceCategoryTxt" [ref=e101] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: MICE
+                - generic [ref=e102] [cursor=pointer]: Shop Now
+            - link "HeadphonesCategory" [ref=e103] [cursor=pointer]:
+              - /url: javascript:void(0)
+              - generic [ref=e104] [cursor=pointer]:
+                - link "HeadphonesCategoryTxt" [ref=e105] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - text: HEADPHONES
+                - generic [ref=e106] [cursor=pointer]: Shop Now
+      - article [ref=e107]:
+        - heading "SPECIAL OFFER" [level=3] [ref=e108]
+        - generic [ref=e109]:
+          - figure [ref=e111]:
+            - img "Special-offer" [ref=e112]
+          - generic [ref=e114]:
+            - generic [ref=e115]: EXPLORE THE NEW DESIGN
+            - heading "HP Pavilion 15z Touch Laptop" [level=1] [ref=e116]
+            - paragraph [ref=e117]: Supremely thin, yet incredibly durable
+            - link "SEE OFFER" [ref=e118] [cursor=pointer]:
+              - /url: "#/product/3"
+              - button "SEE OFFER" [ref=e119] [cursor=pointer]
+      - article [ref=e120]:
+        - generic [ref=e121]:
+          - generic:
+            - generic [ref=e122]:
+              - img [ref=e124]
+              - generic [ref=e125]:
+                - heading "ALL YOU WANT FROM A TABLET" [level=2] [ref=e126]
+                - button "EXPLORE NOW" [ref=e127] [cursor=pointer]
+            - generic [ref=e128]:
+              - img [ref=e130]
+              - generic [ref=e131]:
+                - heading "EXPLORE OUR LATEST INNOVATIVE PRODUCTS" [level=2] [ref=e132]:
+                  - text: EXPLORE OUR LATEST
+                  - text: INNOVATIVE PRODUCTS
+                - button "EXPLORE NOW" [ref=e133] [cursor=pointer]
+            - generic [ref=e134]:
+              - img [ref=e136]
+              - generic [ref=e137]:
+                - heading "START EXPLORING HP NOTEBOOKS" [level=2] [ref=e138]
+                - button "EXPLORE NOW" [ref=e139] [cursor=pointer]
+            - generic [ref=e140]:
+              - img [ref=e142]
+              - generic [ref=e143]:
+                - heading "ALL YOU WANT FROM A TABLET" [level=2] [ref=e144]
+                - button "EXPLORE NOW" [ref=e145] [cursor=pointer]
+          - generic [ref=e146]:
+            - link [ref=e147] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - link [ref=e148] [cursor=pointer]:
+              - /url: javascript:void(0)
+            - link [ref=e149] [cursor=pointer]:
+              - /url: javascript:void(0)
+      - article [ref=e150]:
+        - heading "POPULAR ITEMS" [level=3] [ref=e151]
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - figure [ref=e154]:
+              - link "Special-offer" [ref=e155]:
+                - /url: javascript:void(0)
+            - paragraph [ref=e156]: HP ELITEPAD 1000 G2 TABLET
+            - link "View Details" [ref=e157] [cursor=pointer]:
+              - /url: "#/product/16"
+              - generic [ref=e158] [cursor=pointer]: View Details
+          - generic [ref=e159]:
+            - figure [ref=e160]:
+              - link "Special-offer" [ref=e161]:
+                - /url: javascript:void(0)
+            - paragraph [ref=e162]: HP ELITEBOOK FOLIO
+            - link "View Details" [ref=e163] [cursor=pointer]:
+              - /url: "#/product/10"
+              - generic [ref=e164] [cursor=pointer]: View Details
+          - generic [ref=e165]:
+            - figure [ref=e166]:
+              - link "Special-offer" [ref=e167]:
+                - /url: javascript:void(0)
+            - paragraph [ref=e168]: HP ROAR PLUS WIRELESS SPEAKER
+            - link "View Details" [ref=e169] [cursor=pointer]:
+              - /url: "#/product/21"
+              - generic [ref=e170] [cursor=pointer]: View Details
+      - article [ref=e171]:
+        - generic [ref=e173]:
+          - generic [ref=e176] [cursor=pointer]:
+            - img "chat logo" [ref=e177] [cursor=pointer]
+            - generic [ref=e178] [cursor=pointer]: CHAT WITH US
+          - generic [ref=e179]:
+            - heading "CONTACT US" [level=1] [ref=e180]
+            - generic [ref=e181]:
+              - generic [ref=e183]:
+                - generic [ref=e184]:
+                  - generic [ref=e185]:
+                    - listbox [ref=e186] [cursor=pointer]:
+                      - option
+                      - option "Select Category" [selected]
+                      - option "Laptops"
+                      - option "Headphones"
+                      - option "Tablets"
+                      - option "Speakers"
+                      - option "Mice"
+                    - generic [ref=e187]: Category
+                  - list
+                - generic [ref=e188]:
+                  - generic [ref=e189]:
+                    - listbox [ref=e190] [cursor=pointer]:
+                      - option "Select Product" [selected]
+                    - generic [ref=e191]: Product
+                  - list
+                - generic [ref=e192]:
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: "*"
+                    - textbox [ref=e195]
+                    - generic [ref=e196]: Email
+                  - list:
+                    - listitem
+              - generic [ref=e198]:
+                - generic [ref=e199]:
+                  - generic [ref=e200]: "*"
+                  - text: Subject
+                - generic [ref=e201]:
+                  - textbox [ref=e203]
+                  - list:
+                    - listitem
+                - button "SEND" [disabled] [ref=e205]
+    - contentinfo [ref=e207]:
+      - generic [ref=e208]:
+        - heading "FOLLOW US" [level=3] [ref=e209]
+        - generic [ref=e210]:
+          - link "icon":
+            - /url: " https://www.facebook.com/MicroFocus/"
+            - img "icon" [ref=e211] [cursor=pointer]
+          - link "icon":
+            - /url: https://twitter.com/MicroFocus
+            - img "icon" [ref=e212] [cursor=pointer]
+          - link "icon":
+            - /url: https://www.linkedin.com/company/1024?trk=tyah&trkInfo=clickedVertical%3Ashowcase%2CclickedEntityId%3A1024%2Cidx%3A2-1-2%2CtarId%3A145431482.327%2Ctas%3Ahewlett%20packard%20enterprise%20software
+            - img "icon" [ref=e213] [cursor=pointer]
+        - generic [ref=e214]: © Advantage Inc, 2024. Release 3.3
+```
