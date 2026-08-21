@@ -8,7 +8,7 @@ export default class HomePage {
     static readonly SIGN_IN_ERROR_MESSAGE = "#signInResultMessage.invalid";
     static readonly SIGN_OUT_LINK = "#loginMiniTitle>[translate='Sign_out']";
     static readonly CREATE_NEW_ACCOUNT_LINK = "[translate='CREATE_NEW_ACCOUNT']";
-    static readonly CATEGORY_DROPDOWN = "[name='listBocCategoryDropdown']";
+    static readonly CATEGORY_DROPDOWN = "[name='categoryListboxContactUs']";
     static readonly PRODUCT_DROPDOWN = "[name='productListboxContactUs']";
     static readonly SUBJECT_TEXTAREA = "[name='subjectTextareaContactUs']";
     static readonly EMAIL_TEXTBOX = "[name='emailContactUs']";
