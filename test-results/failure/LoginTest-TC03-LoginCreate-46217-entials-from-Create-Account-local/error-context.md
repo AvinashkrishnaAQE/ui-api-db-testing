@@ -1,0 +1,437 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - img [ref=e6]
+    - generic [ref=e7] [cursor=pointer]: SIGN IN WITH FACEBOOK
+    - generic [ref=e8]: OR
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - textbox [ref=e12]: JamesB
+          - generic [ref=e13]: Username
+        - list
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - textbox [ref=e16]: Test321
+          - generic [ref=e17]: Password
+        - list
+      - generic [ref=e18]:
+        - checkbox [checked] [ref=e19] [cursor=pointer]
+        - generic [ref=e20]: REMEMBER ME
+      - button "SIGN IN" [active] [ref=e22] [cursor=pointer]
+    - link "Forgot your password?" [ref=e23] [cursor=pointer]:
+      - /url: javascript:void(0)
+    - link "CREATE NEW ACCOUNT" [ref=e24] [cursor=pointer]:
+      - /url: javascript:void(0)
+  - complementary [ref=e25]:
+    - list [ref=e26]:
+      - listitem [ref=e27]:
+        - link [ref=e28] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - img [ref=e29] [cursor=pointer]
+      - listitem [ref=e31]:
+        - link [ref=e32] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - img [ref=e33] [cursor=pointer]
+      - listitem [ref=e35] [cursor=pointer]:
+        - link [ref=e36] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - img [ref=e37] [cursor=pointer]
+  - banner [ref=e39]:
+    - navigation:
+      - list [ref=e40]:
+        - listitem [ref=e41]:
+          - link [ref=e42] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - img [ref=e43] [cursor=pointer]
+            - img [ref=e44] [cursor=pointer]
+        - listitem [ref=e46]:
+          - link "ShoppingCart" [ref=e47] [cursor=pointer]:
+            - /url: "#/shoppingCart"
+            - img [ref=e48] [cursor=pointer]
+          - list:
+            - listitem
+        - listitem [ref=e50]:
+          - link "UserMenu" [ref=e51] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - img [ref=e53] [cursor=pointer]
+        - listitem [ref=e55]:
+          - generic [ref=e59] [cursor=pointer]:
+            - img [ref=e61] [cursor=pointer]
+            - generic:
+              - textbox "Search AdvantageOnlineShopping.com" [ref=e63]
+              - img [ref=e65] [cursor=pointer]
+        - listitem
+        - listitem
+        - listitem
+        - listitem
+      - link "dvantage DEMO" [ref=e67] [cursor=pointer]:
+        - /url: "#/"
+        - img [ref=e68] [cursor=pointer]
+        - generic [ref=e70] [cursor=pointer]: dvantage
+        - generic [ref=e71] [cursor=pointer]: DEMO
+  - generic [ref=e72]:
+    - navigation [ref=e73]:
+      - link "HOME/" [ref=e74] [cursor=pointer]:
+        - /url: "#/"
+      - generic [ref=e75]: CREATE ACCOUNT
+    - article [ref=e77]:
+      - heading "CREATE ACCOUNT" [level=3] [ref=e78]
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - heading "NOTICE" [level=4] [ref=e84]
+            - paragraph [ref=e86]: This is a demo site.
+            - paragraph [ref=e87]: Do not use real data.
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - heading "ACCOUNT DETAILS" [level=3] [ref=e91]
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]:
+                    - generic [ref=e95]: "*"
+                    - textbox [ref=e96]
+                    - generic [ref=e97]: Username
+                  - list:
+                    - listitem
+                - generic [ref=e98]:
+                  - generic [ref=e99]:
+                    - generic [ref=e100]: "*"
+                    - textbox [ref=e101]
+                    - generic [ref=e102]: Email
+                  - list:
+                    - listitem
+                    - listitem
+              - generic [ref=e103]:
+                - generic [ref=e104]:
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: "*"
+                    - textbox [ref=e107]
+                    - generic [ref=e108]: Password
+                  - list:
+                    - listitem
+                - generic [ref=e109]:
+                  - generic [ref=e110]:
+                    - generic [ref=e111]: "*"
+                    - textbox [ref=e112]
+                    - generic [ref=e113]: Confirm password
+                  - list:
+                    - listitem
+            - generic [ref=e114]:
+              - heading "PERSONAL DETAILS" [level=3] [ref=e115]
+              - generic [ref=e116]:
+                - generic [ref=e117]:
+                  - generic [ref=e118]:
+                    - textbox [ref=e119]
+                    - generic [ref=e120]: First Name
+                  - list
+                - generic [ref=e121]:
+                  - generic [ref=e122]:
+                    - textbox [ref=e123]
+                    - generic [ref=e124]: Last Name
+                  - list
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - textbox [ref=e128]
+                  - generic [ref=e129]: Phone Number
+                - list
+            - generic [ref=e130]:
+              - heading "ADDRESS" [level=3] [ref=e131]
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e134]:
+                    - listbox [ref=e135]:
+                      - option [selected]
+                      - option "Afganistan"
+                      - option "Albania"
+                      - option "Algeria"
+                      - option "American Samoa"
+                      - option "Andora"
+                      - option "Angola"
+                      - option "Anguilla"
+                      - option "Antigua and Barbuda"
+                      - option "Argentina"
+                      - option "Armenia"
+                      - option "Aruba"
+                      - option "Australia"
+                      - option "Austria"
+                      - option "Azerbaijan"
+                      - option "Bahamas"
+                      - option "Bahrain"
+                      - option "Bangladesh"
+                      - option "Barbados"
+                      - option "Belarus"
+                      - option "Belgium"
+                      - option "Belize"
+                      - option "Benin"
+                      - option "Bermuda"
+                      - option "Bhutan"
+                      - option "Bolivia"
+                      - option "Bonaire"
+                      - option "Bosnia and Herzegovina"
+                      - option "Botswana"
+                      - option "Brazil"
+                      - option "Brunei"
+                      - option "Bulgaria"
+                      - option "Burkina Faso"
+                      - option "Burundi"
+                      - option "Cambodia"
+                      - option "Cameroon"
+                      - option "Canada"
+                      - option "Canary Islands"
+                      - option "Cape Verde aranelle"
+                      - option "Cayman Islands"
+                      - option "Central African Republic"
+                      - option "Chad"
+                      - option "Chile"
+                      - option "China"
+                      - option "Colombia"
+                      - option "Comoro Islands"
+                      - option "Congo"
+                      - option "Cook Islands"
+                      - option "Costa Rica"
+                      - option "Croatia"
+                      - option "Cuba"
+                      - option "Cyprus"
+                      - option "Czech Republic"
+                      - option "Democratic Republic of Congo"
+                      - option "Denmark"
+                      - option "Djibouti"
+                      - option "Dominica"
+                      - option "Dominican Republic"
+                      - option "Dutch (Netherlands)); Antilles"
+                      - option "East Timor"
+                      - option "Ecuador"
+                      - option "Egypt"
+                      - option "El Salvador"
+                      - option "England"
+                      - option "Equatorial Guinea"
+                      - option "Eritrea"
+                      - option "Estonia"
+                      - option "Ethiopia"
+                      - option "Falkland Islands"
+                      - option "Fiji"
+                      - option "Finland"
+                      - option "France"
+                      - option "French Guyana"
+                      - option "French Polynesia"
+                      - option "Gabonaise"
+                      - option "Gambia"
+                      - option "Georgia"
+                      - option "Germany"
+                      - option "Ghana"
+                      - option "Gibraltar"
+                      - option "Greece"
+                      - option "Greenland"
+                      - option "Grenada"
+                      - option "Guadeloupe"
+                      - option "Guam"
+                      - option "Guatemala"
+                      - option "Guernsey"
+                      - option "Guinea"
+                      - option "Guinea Bissau"
+                      - option "Guyana"
+                      - option "Haiti"
+                      - option "Hawai"
+                      - option "Heard Island"
+                      - option "Honduras"
+                      - option "Hong Kong"
+                      - option "Hungary"
+                      - option "Iceland"
+                      - option "India"
+                      - option "Indonesia"
+                      - option "Iran"
+                      - option "Iraq"
+                      - option "Ireland"
+                      - option "Isle of Man"
+                      - option "Israel"
+                      - option "Italy"
+                      - option "Ivory Cost"
+                      - option "Jamaica"
+                      - option "Japan"
+                      - option "Jersey"
+                      - option "Jordan"
+                      - option "Kazakhstan"
+                      - option "Kenya"
+                      - option "Kiribati"
+                      - option "Kosovo"
+                      - option "Kuwait"
+                      - option "Kyrgyzstan"
+                      - option "Laos"
+                      - option "Latvia"
+                      - option "Lebanon"
+                      - option "Lesotho"
+                      - option "Liberia"
+                      - option "Libya"
+                      - option "Liechtenstein"
+                      - option "Lithuania"
+                      - option "Luxembourg"
+                      - option "Macau"
+                      - option "Macedonia"
+                      - option "Macquarie Island"
+                      - option "Madagascar"
+                      - option "Malawi"
+                      - option "Malaysia"
+                      - option "maldives Islands"
+                      - option "Mali"
+                      - option "Malta"
+                      - option "Marocco"
+                      - option "Marshal Islands"
+                      - option "Martinique"
+                      - option "Mauritania"
+                      - option "Mauritius"
+                      - option "Mayotte"
+                      - option "Mexico"
+                      - option "Micronesia"
+                      - option "Midway Atol"
+                      - option "Moldova"
+                      - option "Monaco"
+                      - option "Mongolia"
+                      - option "Montenegro"
+                      - option "Montserrat"
+                      - option "Mozambique"
+                      - option "Myanmar (Burma));"
+                      - option "Namibia"
+                      - option "Nauru"
+                      - option "Nepal"
+                      - option "Netherland"
+                      - option "New Caledonia"
+                      - option "New Zealand"
+                      - option "Nicaragua"
+                      - option "Niger"
+                      - option "Nigeria"
+                      - option "Norfolk Islands"
+                      - option "North Korea"
+                      - option "Northen Ireland"
+                      - option "Norway"
+                      - option "Oman"
+                      - option "Pakistan"
+                      - option "Palau"
+                      - option "Palestinian Authority"
+                      - option "Panama"
+                      - option "Paraguay"
+                      - option "Peru"
+                      - option "Philippines"
+                      - option "Poland"
+                      - option "Portugal"
+                      - option "Puerto Rico"
+                      - option "Puerto Rico"
+                      - option "Qatar"
+                      - option "Reunion"
+                      - option "Romania"
+                      - option "Russia"
+                      - option "Rwanda"
+                      - option "Saint Helena Island"
+                      - option "Saint Kitts and Nevis"
+                      - option "Saint Vincent and the Grenadines"
+                      - option "Samoa"
+                      - option "San Marino"
+                      - option "Sao Tome"
+                      - option "Saudi Arabia"
+                      - option "Scotland"
+                      - option "Senegal"
+                      - option "Serbia"
+                      - option "Seychelles Islands"
+                      - option "Sierra Leone"
+                      - option "Singapore"
+                      - option "Slovakia"
+                      - option "Slovenia"
+                      - option "Solomon Islands"
+                      - option "Somalia"
+                      - option "South Africa"
+                      - option "South Georgia"
+                      - option "South Korea"
+                      - option "South Sudan"
+                      - option "Spain"
+                      - option "Sri Lanka"
+                      - option "St. Lucia"
+                      - option "Sudan"
+                      - option "Surinam"
+                      - option "Swaziland"
+                      - option "Sweden"
+                      - option "Switzerland"
+                      - option "Syria"
+                      - option "Tadzhikistan"
+                      - option "Taiwan"
+                      - option "Tanzania"
+                      - option "Thailand"
+                      - option "Togo (Togolese));"
+                      - option "Tokelau"
+                      - option "Tonga"
+                      - option "Trinidad and Tobago"
+                      - option "Tunisia"
+                      - option "Turkey"
+                      - option "Turkmenistan"
+                      - option "Turks and Caicos Islands"
+                      - option "Uganda"
+                      - option "Ukraine"
+                      - option "United Arab Emirates"
+                      - option "United Kingdom"
+                      - option "United States"
+                      - option "Uruguay"
+                      - option "Uzbekistan"
+                      - option "Vanuatu"
+                      - option "Vatican"
+                      - option "Vatican"
+                      - option "Venezuela"
+                      - option "Vietnam"
+                      - option "Virgin Islands (UK));"
+                      - option "Virgin Islands (USA));"
+                      - option "Wales"
+                      - option "Wallis and Futuna Islands"
+                      - option "Yemen"
+                      - option "Zambia"
+                      - option "Zanzibar"
+                      - option "Zimbabwe"
+                    - generic [ref=e136]: Country
+                  - list
+                - generic [ref=e137]:
+                  - generic [ref=e138]:
+                    - textbox [ref=e139]
+                    - generic [ref=e140]: City
+                  - list
+              - generic [ref=e141]:
+                - generic [ref=e142]:
+                  - generic [ref=e143]:
+                    - textbox [ref=e144]
+                    - generic [ref=e145]: Address
+                  - list
+                - generic [ref=e146]:
+                  - generic [ref=e147]:
+                    - textbox [ref=e148]
+                    - generic [ref=e149]: State / Province / Region
+                  - list
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - textbox [ref=e153]
+                  - generic [ref=e154]: Postal Code
+                - list
+            - generic [ref=e155]:
+              - checkbox [checked] [ref=e156] [cursor=pointer]
+              - generic [ref=e157]: Receive exclusive offers and promotions from Advantage
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - checkbox [ref=e160]
+                - generic [ref=e161] [cursor=pointer]: I agree to the www.AdvantageOnlineShopping.com Conditions of Use and Privacy Notice
+              - list
+        - generic [ref=e162]:
+          - button "REGISTER" [disabled] [ref=e164]
+          - link "ALREADY HAVE AN ACCOUNT?" [ref=e166] [cursor=pointer]:
+            - /url: javascript:void(0)
+    - contentinfo [ref=e167]:
+      - generic [ref=e168]:
+        - heading "FOLLOW US" [level=3] [ref=e169]
+        - generic [ref=e170]:
+          - link "icon":
+            - /url: " https://www.facebook.com/MicroFocus/"
+            - img "icon" [ref=e171] [cursor=pointer]
+          - link "icon":
+            - /url: https://twitter.com/MicroFocus
+            - img "icon" [ref=e172] [cursor=pointer]
+          - link "icon":
+            - /url: https://www.linkedin.com/company/1024?trk=tyah&trkInfo=clickedVertical%3Ashowcase%2CclickedEntityId%3A1024%2Cidx%3A2-1-2%2CtarId%3A145431482.327%2Ctas%3Ahewlett%20packard%20enterprise%20software
+            - img "icon" [ref=e173] [cursor=pointer]
+        - generic [ref=e174]: © Advantage Inc, 2024. Release 3.3
+```

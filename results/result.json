@@ -88,16 +88,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 68957,
+                  "duration": 67590,
                   "error": {
-                    "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.hi-user-wrong').first() to be visible\u001b[22m\n",
-                    "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.hi-user-wrong').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16",
+                    "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n",
+                    "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16",
                     "location": {
                       "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
                       "column": 21,
                       "line": 164
                     },
-                    "snippet": "   at ../framework/playwright/actions/UIElementActions.ts:164\n\n  162 |     await test.step(`Getting text content of ${this.description}`, async () => {\n  163 |       const element = this.getLocator();\n> 164 |       await element.waitFor();\n      |                     ^\n  165 |       content = (await element.textContent()).trim();\n  166 |     });\n  167 |     return content;"
+                    "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
@@ -106,7 +106,7 @@
                         "column": 21,
                         "line": 164
                       },
-                      "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.hi-user-wrong').first() to be visible\u001b[22m\n\n\n   at ../framework/playwright/actions/UIElementActions.ts:164\n\n  162 |     await test.step(`Getting text content of ${this.description}`, async () => {\n  163 |       const element = this.getLocator();\n> 164 |       await element.waitFor();\n      |                     ^\n  165 |       content = (await element.textContent()).trim();\n  166 |     });\n  167 |     return content;\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16"
+                      "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\u001b[22m\n\u001b[2m    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\u001b[22m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\u001b[22m\n\u001b[2m    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\u001b[22m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16\u001b[22m"
                     }
                   ],
                   "stdout": [],
@@ -115,41 +115,41 @@
                   "steps": [
                     {
                       "title": "Launching the application",
-                      "duration": 2594,
+                      "duration": 1895,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 2583
+                          "duration": 1891
                         }
                       ]
                     },
                     {
                       "title": "Login to application credentials as JamesB & Test321",
-                      "duration": 5810,
+                      "duration": 5430,
                       "steps": [
                         {
                           "title": "Clicking on User Icon",
-                          "duration": 660
+                          "duration": 4498
                         },
                         {
                           "title": "Enter login credentials as JamesB & Test321",
-                          "duration": 5145,
+                          "duration": 928,
                           "steps": [
                             {
                               "title": "Entering User Name as JamesB",
-                              "duration": 189
+                              "duration": 119
                             },
                             {
                               "title": "Entering Password as Test321",
-                              "duration": 196
+                              "duration": 113
                             },
                             {
                               "title": "Check Remember Me",
-                              "duration": 446
+                              "duration": 546
                             },
                             {
                               "title": "Clicking on Sign In Button",
-                              "duration": 4304
+                              "duration": 145
                             }
                           ]
                         }
@@ -157,36 +157,36 @@
                     },
                     {
                       "title": "Verify that user is successfully logged in as JamesB",
-                      "duration": 60009,
+                      "duration": 60008,
                       "error": {
-                        "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.hi-user-wrong').first() to be visible\u001b[22m\n",
-                        "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.hi-user-wrong').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16",
+                        "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16",
                         "location": {
                           "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
                           "column": 21,
                           "line": 164
                         },
-                        "snippet": "   at ../framework/playwright/actions/UIElementActions.ts:164\n\n  162 |     await test.step(`Getting text content of ${this.description}`, async () => {\n  163 |       const element = this.getLocator();\n> 164 |       await element.waitFor();\n      |                     ^\n  165 |       content = (await element.textContent()).trim();\n  166 |     });\n  167 |     return content;"
+                        "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "steps": [
                         {
                           "title": "Getting text content of User Name",
-                          "duration": 60008,
+                          "duration": 60007,
                           "error": {
-                            "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.hi-user-wrong').first() to be visible\u001b[22m\n",
-                            "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.hi-user-wrong').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16",
+                            "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n",
+                            "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:18:16",
                             "location": {
                               "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
                               "column": 21,
                               "line": 164
                             },
-                            "snippet": "   at ../framework/playwright/actions/UIElementActions.ts:164\n\n  162 |     await test.step(`Getting text content of ${this.description}`, async () => {\n  163 |       const element = this.getLocator();\n> 164 |       await element.waitFor();\n      |                     ^\n  165 |       content = (await element.textContent()).trim();\n  166 |     });\n  167 |     return content;"
+                            "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m"
                           }
                         }
                       ]
                     }
                   ],
-                  "startTime": "2026-08-21T10:01:02.492Z",
+                  "startTime": "2026-08-24T09:55:36.727Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -224,17 +224,292 @@
           "file": "LoginTest.spec.ts",
           "line": 14,
           "column": 5
+        },
+        {
+          "title": "TC02_InValidLogin - Login with invalid credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "local",
+              "projectName": "local",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15723,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Launching the application",
+                      "duration": 1731,
+                      "steps": [
+                        {
+                          "title": "Navigate to Home Page",
+                          "duration": 1728
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Login to application credentials as JamesB & test3210",
+                      "duration": 13013,
+                      "steps": [
+                        {
+                          "title": "Clicking on User Icon",
+                          "duration": 7426
+                        },
+                        {
+                          "title": "Enter login credentials as JamesB & test3210",
+                          "duration": 5584,
+                          "steps": [
+                            {
+                              "title": "Entering User Name as JamesB",
+                              "duration": 128
+                            },
+                            {
+                              "title": "Entering Password as test3210",
+                              "duration": 134
+                            },
+                            {
+                              "title": "Check Remember Me",
+                              "duration": 541
+                            },
+                            {
+                              "title": "Clicking on Sign In Button",
+                              "duration": 4776
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Verify that error message Incorrect user name or password.",
+                      "duration": 796,
+                      "steps": [
+                        {
+                          "title": "Getting text content of Error Message",
+                          "duration": 790
+                        },
+                        {
+                          "title": "Verifying that Error Message has text Incorrect user name or password.",
+                          "duration": 3
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2026-08-24T09:56:45.479Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiTG9naW4gd2l0aCBpbnZhbGlkIGNyZWRlbnRpYWxzIn19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZTAwNyJ9XX19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxpbmtzIjpbeyJ1cmwiOiJodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3BsYXl3cmlnaHQvaXNzdWVzLzEyNDQiLCJuYW1lIjoiSVNTVUUtMTI0NCJ9XX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "539b1c6d7fcc511d6019-e47bfc8f8fcde5281bc0",
+          "file": "LoginTest.spec.ts",
+          "line": 23,
+          "column": 5
+        },
+        {
+          "title": "TC03_LoginCreateAccount - Login with valid credentials from Create Account",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 1200000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "local",
+              "projectName": "local",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 77110,
+                  "error": {
+                    "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n",
+                    "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:38:16",
+                    "location": {
+                      "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
+                      "column": 21,
+                      "line": 164
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
+                        "column": 21,
+                        "line": 164
+                      },
+                      "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\u001b[22m\n\u001b[2m    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\u001b[22m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\u001b[22m\n\u001b[2m    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\u001b[22m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:38:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Launching the application",
+                      "duration": 9230,
+                      "steps": [
+                        {
+                          "title": "Navigate to Home Page",
+                          "duration": 9229
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Navigate to Create Account page",
+                      "duration": 5879,
+                      "steps": [
+                        {
+                          "title": "Clicking on User Icon",
+                          "duration": 503
+                        },
+                        {
+                          "title": "Clicking on Create New Account Link",
+                          "duration": 5375
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Click on Already have an account link",
+                      "duration": 934,
+                      "steps": [
+                        {
+                          "title": "Clicking on Already have an Account Link",
+                          "duration": 933
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Enter login credentials as JamesB & Test321",
+                      "duration": 875,
+                      "steps": [
+                        {
+                          "title": "Entering User Name as JamesB",
+                          "duration": 116
+                        },
+                        {
+                          "title": "Entering Password as Test321",
+                          "duration": 117
+                        },
+                        {
+                          "title": "Check Remember Me",
+                          "duration": 496
+                        },
+                        {
+                          "title": "Clicking on Sign In Button",
+                          "duration": 143
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Verify that user is successfully logged in as JamesB",
+                      "duration": 60007,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:38:16",
+                        "location": {
+                          "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
+                          "column": 21,
+                          "line": 164
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "steps": [
+                        {
+                          "title": "Getting text content of User Name",
+                          "duration": 60005,
+                          "error": {
+                            "message": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n",
+                            "stack": "TimeoutError: locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a#menuUserLink>span.welcomeback.user').first() to be visible\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:164:21\n    at UIElementActions.getTextContent (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts:162:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:52:102\n    at HomeSteps.validateLogin (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:51:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/LoginTest.spec.ts:38:16",
+                            "location": {
+                              "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
+                              "column": 21,
+                              "line": 164
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/UIElementActions.ts:164\n\n\u001b[0m \u001b[90m 162 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Getting text content of ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 163 |\u001b[39m       \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 164 |\u001b[39m       \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 165 |\u001b[39m       content \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n \u001b[90m 166 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m     \u001b[36mreturn\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2026-08-24T09:57:01.493Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImRlc2NyaXB0aW9uIjoiTG9naW4gd2l0aCB2YWxpZCBjcmVkZW50aWFscyBmcm9tIENyZWF0ZSBBY2NvdW50In19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZTAwNyJ9XX19"
+                    },
+                    {
+                      "name": "Allure Metadata (metadata)",
+                      "contentType": "application/vnd.allure.message+json",
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxpbmtzIjpbeyJ1cmwiOiJodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3BsYXl3cmlnaHQvaXNzdWVzLzEyNDUiLCJuYW1lIjoiSVNTVUUtMTI0NSJ9XX19"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/ascendqe007/Documents/ui-api-db-project/test-results/failure/LoginTest-TC03-LoginCreate-46217-entials-from-Create-Account-local/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/UIElementActions.ts",
+                    "column": 21,
+                    "line": 164
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "539b1c6d7fcc511d6019-4a323e1fe04a1b012b30",
+          "file": "LoginTest.spec.ts",
+          "line": 31,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-21T10:01:00.399Z",
-    "duration": 71936.904,
-    "expected": 0,
+    "startTime": "2026-08-24T09:55:35.584Z",
+    "duration": 163135.662,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 2,
     "flaky": 0
   }
 }
