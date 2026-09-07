@@ -93,6 +93,10 @@ export default class HomeSteps {
      */
     public async enterContactUsDetails(category: string, product: string, email: string, subject: string) {
         await test.step(`Entering Contact Us details`, async () => {
+            if (category === "Headphones") {
+                await this.ui.dropdown(HomePage.PRODUCT_DROPDOWN, HomePageConstants.PRODUCT_DROPDOWN)
+                    .selectByVisibleText(product);
+            }
             await this.ui.dropdown(HomePage.CATEGORY_DROPDOWN, HomePageConstants.CATEGORY_DROPDOWN)
                 .selectByVisibleText(category);
             await this.ui.dropdown(HomePage.PRODUCT_DROPDOWN, HomePageConstants.PRODUCT_DROPDOWN)

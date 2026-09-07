@@ -74,7 +74,7 @@
       "specs": [
         {
           "title": "TC01_ContactUsTest : Contact Us regarding Headphone",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -87,71 +87,74 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 14113,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 65144,
+                  "error": {
+                    "message": "TimeoutError: locator.selectOption: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'productListboxContactUs\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <select role=\"listbox\" ng-model=\"secModel\" name=\"productListboxContactUs\" ng-init=\"secModel = secSelectOptions[0]\" class=\"ng-pristine ng-untouched ng-valid ng-scope\" ng-options=\"c as c.productName for c in secSelectOptions\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    112 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.selectOption: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'productListboxContactUs\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <select role=\"listbox\" ng-model=\"secModel\" name=\"productListboxContactUs\" ng-init=\"secModel = secSelectOptions[0]\" class=\"ng-pristine ng-untouched ng-valid ng-scope\" ng-options=\"c as c.productName for c in secSelectOptions\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    112 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:39:26\n    at DropDownActions.selectByVisibleText (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:38:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:98:22\n    at HomeSteps.enterContactUsDetails (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:95:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/ContactUsTest.spec.ts:13:20",
+                    "location": {
+                      "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts",
+                      "column": 26,
+                      "line": 39
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/DropDownActions.ts:39\n\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[36mpublic\u001b[39m \u001b[36masync\u001b[39m selectByVisibleText(text\u001b[33m:\u001b[39m string) {\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Selecting text ${text} from ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlocator\u001b[33m.\u001b[39mselectOption({ label\u001b[33m:\u001b[39m text })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts",
+                        "column": 26,
+                        "line": 39
+                      },
+                      "message": "TimeoutError: locator.selectOption: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'productListboxContactUs\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <select role=\"listbox\" ng-model=\"secModel\" name=\"productListboxContactUs\" ng-init=\"secModel = secSelectOptions[0]\" class=\"ng-pristine ng-untouched ng-valid ng-scope\" ng-options=\"c as c.productName for c in secSelectOptions\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    112 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../framework/playwright/actions/DropDownActions.ts:39\n\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[36mpublic\u001b[39m \u001b[36masync\u001b[39m selectByVisibleText(text\u001b[33m:\u001b[39m string) {\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Selecting text ${text} from ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlocator\u001b[33m.\u001b[39mselectOption({ label\u001b[33m:\u001b[39m text })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\u001b[0m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:39:26\u001b[22m\n\u001b[2m    at DropDownActions.selectByVisibleText (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:38:16)\u001b[22m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:98:22\u001b[22m\n\u001b[2m    at HomeSteps.enterContactUsDetails (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:95:20)\u001b[22m\n\u001b[2m    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/ContactUsTest.spec.ts:13:20\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
                       "title": "Launching the application",
-                      "duration": 2001,
+                      "duration": 4732,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1998
+                          "duration": 4713
                         }
                       ]
                     },
                     {
                       "title": "Entering Contact Us details",
-                      "duration": 10636,
-                      "steps": [
-                        {
-                          "title": "Selecting text Headphones from Category Dropdown",
-                          "duration": 8511
+                      "duration": 60126,
+                      "error": {
+                        "message": "TimeoutError: locator.selectOption: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'productListboxContactUs\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <select role=\"listbox\" ng-model=\"secModel\" name=\"productListboxContactUs\" ng-init=\"secModel = secSelectOptions[0]\" class=\"ng-pristine ng-untouched ng-valid ng-scope\" ng-options=\"c as c.productName for c in secSelectOptions\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    112 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.selectOption: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'productListboxContactUs\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <select role=\"listbox\" ng-model=\"secModel\" name=\"productListboxContactUs\" ng-init=\"secModel = secSelectOptions[0]\" class=\"ng-pristine ng-untouched ng-valid ng-scope\" ng-options=\"c as c.productName for c in secSelectOptions\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    112 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:39:26\n    at DropDownActions.selectByVisibleText (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:38:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:98:22\n    at HomeSteps.enterContactUsDetails (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:95:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/ContactUsTest.spec.ts:13:20",
+                        "location": {
+                          "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts",
+                          "column": 26,
+                          "line": 39
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/DropDownActions.ts:39\n\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[36mpublic\u001b[39m \u001b[36masync\u001b[39m selectByVisibleText(text\u001b[33m:\u001b[39m string) {\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Selecting text ${text} from ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlocator\u001b[33m.\u001b[39mselectOption({ label\u001b[33m:\u001b[39m text })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\u001b[0m"
+                      },
+                      "steps": [
                         {
                           "title": "Selecting text HP H2310 In-ear Headset from Product Dropdown",
-                          "duration": 1862
-                        },
-                        {
-                          "title": "Entering ContactUs email as headphone@test.com",
-                          "duration": 130
-                        },
-                        {
-                          "title": "Entering ContactUs Subject as Headphones that I purchased recently is awesome. I would recommend this to my friends and family.",
-                          "duration": 128
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Click on Send button of Contact Us",
-                      "duration": 1064,
-                      "steps": [
-                        {
-                          "title": "Clicking on Send Button",
-                          "duration": 1058
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Verifying Success Message of Contact Us",
-                      "duration": 216,
-                      "steps": [
-                        {
-                          "title": "Getting text content of ContactUs Success Message",
-                          "duration": 209
-                        },
-                        {
-                          "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
-                          "duration": 5
+                          "duration": 60123,
+                          "error": {
+                            "message": "TimeoutError: locator.selectOption: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'productListboxContactUs\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <select role=\"listbox\" ng-model=\"secModel\" name=\"productListboxContactUs\" ng-init=\"secModel = secSelectOptions[0]\" class=\"ng-pristine ng-untouched ng-valid ng-scope\" ng-options=\"c as c.productName for c in secSelectOptions\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    112 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n",
+                            "stack": "TimeoutError: locator.selectOption: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\\'productListboxContactUs\\']').first()\u001b[22m\n\u001b[2m    - locator resolved to <select role=\"listbox\" ng-model=\"secModel\" name=\"productListboxContactUs\" ng-init=\"secModel = secSelectOptions[0]\" class=\"ng-pristine ng-untouched ng-valid ng-scope\" ng-options=\"c as c.productName for c in secSelectOptions\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - did not find some options\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    112 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m        - did not find some options\u001b[22m\n\u001b[2m      - retrying select option action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n    at /home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:39:26\n    at DropDownActions.selectByVisibleText (/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts:38:16)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:98:22\n    at HomeSteps.enterContactUsDetails (/home/ascendqe007/Documents/ui-api-db-project/src/advantage/steps/HomeSteps.ts:95:20)\n    at /home/ascendqe007/Documents/ui-api-db-project/src/tests/ContactUsTest.spec.ts:13:20",
+                            "location": {
+                              "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts",
+                              "column": 26,
+                              "line": 39
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../framework/playwright/actions/DropDownActions.ts:39\n\n\u001b[0m \u001b[90m 37 |\u001b[39m   \u001b[36mpublic\u001b[39m \u001b[36masync\u001b[39m selectByVisibleText(text\u001b[33m:\u001b[39m string) {\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m`Selecting text ${text} from ${this.description}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlocator\u001b[33m.\u001b[39mselectOption({ label\u001b[33m:\u001b[39m text })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\u001b[0m"
+                          }
                         }
                       ]
                     }
                   ],
-                  "startTime": "2026-09-07T09:51:02.494Z",
+                  "startTime": "2026-09-07T10:44:12.111Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -168,11 +171,21 @@
                       "name": "Allure Metadata (metadata)",
                       "contentType": "application/vnd.allure.message+json",
                       "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxpbmtzIjpbeyJ1cmwiOiJodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3BsYXl3cmlnaHQvaXNzdWVzLzEzMzciLCJuYW1lIjoiSVNTVUUtMTMzNyJ9XX19"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/ascendqe007/Documents/ui-api-db-project/test-results/failure/ContactUsTest-TC01-Contact-46374-tact-Us-regarding-Headphone-local/error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/ascendqe007/Documents/ui-api-db-project/src/framework/playwright/actions/DropDownActions.ts",
+                    "column": 26,
+                    "line": 39
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "1d3d06f8f12d40259022-0a94090192176d256384",
@@ -193,10 +206,10 @@
               "projectName": "local",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11209,
+                  "duration": 12883,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -204,62 +217,62 @@
                   "steps": [
                     {
                       "title": "Launching the application",
-                      "duration": 3682,
+                      "duration": 5408,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 3681
+                          "duration": 5404
                         }
                       ]
                     },
                     {
                       "title": "Entering Contact Us details",
-                      "duration": 5955,
+                      "duration": 5986,
                       "steps": [
                         {
                           "title": "Selecting text Speakers from Category Dropdown",
-                          "duration": 4355
+                          "duration": 4373
                         },
                         {
                           "title": "Selecting text HP Roar Wireless Speaker from Product Dropdown",
-                          "duration": 1350
+                          "duration": 1356
                         },
                         {
                           "title": "Entering ContactUs email as speakers@test.com",
-                          "duration": 124
+                          "duration": 119
                         },
                         {
                           "title": "Entering ContactUs Subject as This is to inform you that Speakers that I purchased recently is defective. Please provide the replacement for it. Thanks!",
-                          "duration": 123
+                          "duration": 132
                         }
                       ]
                     },
                     {
                       "title": "Click on Send button of Contact Us",
-                      "duration": 1040,
+                      "duration": 1062,
                       "steps": [
                         {
                           "title": "Clicking on Send Button",
-                          "duration": 1039
+                          "duration": 1056
                         }
                       ]
                     },
                     {
                       "title": "Verifying Success Message of Contact Us",
-                      "duration": 303,
+                      "duration": 218,
                       "steps": [
                         {
                           "title": "Getting text content of ContactUs Success Message",
-                          "duration": 301
+                          "duration": 210
                         },
                         {
                           "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
-                          "duration": 2
+                          "duration": 4
                         }
                       ]
                     }
                   ],
-                  "startTime": "2026-09-07T09:51:17.057Z",
+                  "startTime": "2026-09-07T10:45:18.843Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -293,11 +306,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-07T09:51:01.151Z",
-    "duration": 27348.443000000003,
-    "expected": 2,
+    "startTime": "2026-09-07T10:44:10.819Z",
+    "duration": 81477.526,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
