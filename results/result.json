@@ -88,7 +88,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 17720,
+                  "duration": 14113,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -96,62 +96,62 @@
                   "steps": [
                     {
                       "title": "Launching the application",
-                      "duration": 6263,
+                      "duration": 2001,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 6256
+                          "duration": 1998
                         }
                       ]
                     },
                     {
                       "title": "Entering Contact Us details",
-                      "duration": 8626,
+                      "duration": 10636,
                       "steps": [
                         {
                           "title": "Selecting text Headphones from Category Dropdown",
-                          "duration": 6411
+                          "duration": 8511
                         },
                         {
                           "title": "Selecting text HP H2310 In-ear Headset from Product Dropdown",
-                          "duration": 1912
+                          "duration": 1862
                         },
                         {
                           "title": "Entering ContactUs email as headphone@test.com",
-                          "duration": 141
+                          "duration": 130
                         },
                         {
                           "title": "Entering ContactUs Subject as Headphones that I purchased recently is awesome. I would recommend this to my friends and family.",
-                          "duration": 153
+                          "duration": 128
                         }
                       ]
                     },
                     {
                       "title": "Click on Send button of Contact Us",
-                      "duration": 1074,
+                      "duration": 1064,
                       "steps": [
                         {
                           "title": "Clicking on Send Button",
-                          "duration": 1068
+                          "duration": 1058
                         }
                       ]
                     },
                     {
                       "title": "Verifying Success Message of Contact Us",
-                      "duration": 1349,
+                      "duration": 216,
                       "steps": [
                         {
                           "title": "Getting text content of ContactUs Success Message",
-                          "duration": 1336
+                          "duration": 209
                         },
                         {
                           "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
-                          "duration": 9
+                          "duration": 5
                         }
                       ]
                     }
                   ],
-                  "startTime": "2026-08-20T11:56:36.642Z",
+                  "startTime": "2026-09-07T09:51:02.494Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -196,7 +196,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 13528,
+                  "duration": 11209,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -204,62 +204,62 @@
                   "steps": [
                     {
                       "title": "Launching the application",
-                      "duration": 3369,
+                      "duration": 3682,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 3367
+                          "duration": 3681
                         }
                       ]
                     },
                     {
                       "title": "Entering Contact Us details",
-                      "duration": 8537,
+                      "duration": 5955,
                       "steps": [
                         {
                           "title": "Selecting text Speakers from Category Dropdown",
-                          "duration": 5903
+                          "duration": 4355
                         },
                         {
                           "title": "Selecting text HP Roar Wireless Speaker from Product Dropdown",
-                          "duration": 2369
+                          "duration": 1350
                         },
                         {
                           "title": "Entering ContactUs email as speakers@test.com",
-                          "duration": 121
+                          "duration": 124
                         },
                         {
                           "title": "Entering ContactUs Subject as This is to inform you that Speakers that I purchased recently is defective. Please provide the replacement for it. Thanks!",
-                          "duration": 138
+                          "duration": 123
                         }
                       ]
                     },
                     {
                       "title": "Click on Send button of Contact Us",
-                      "duration": 1050,
+                      "duration": 1040,
                       "steps": [
                         {
                           "title": "Clicking on Send Button",
-                          "duration": 1049
+                          "duration": 1039
                         }
                       ]
                     },
                     {
                       "title": "Verifying Success Message of Contact Us",
-                      "duration": 321,
+                      "duration": 303,
                       "steps": [
                         {
                           "title": "Getting text content of ContactUs Success Message",
-                          "duration": 314
+                          "duration": 301
                         },
                         {
                           "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
-                          "duration": 5
+                          "duration": 2
                         }
                       ]
                     }
                   ],
-                  "startTime": "2026-08-20T11:56:54.823Z",
+                  "startTime": "2026-09-07T09:51:17.057Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -293,8 +293,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-20T11:56:34.544Z",
-    "duration": 34092.71,
+    "startTime": "2026-09-07T09:51:01.151Z",
+    "duration": 27348.443000000003,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,
