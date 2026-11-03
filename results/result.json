@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/home/ascendqe007/Documents/ui-api-db-project/playwright.config.ts",
-    "rootDir": "/home/ascendqe007/Documents/ui-api-db-project/src/tests",
+    "configFile": "/home/ascendqe-007/Documents/GitHub_Playwright_Repos/ui-api-db-testing/playwright.config.ts",
+    "rootDir": "/home/ascendqe-007/Documents/GitHub_Playwright_Repos/ui-api-db-testing/src/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -26,7 +26,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/home/ascendqe007/Documents/ui-api-db-project/test-results/failure",
+        "outputDir": "/home/ascendqe-007/Documents/GitHub_Playwright_Repos/ui-api-db-testing/test-results/failure",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -34,7 +34,7 @@
         },
         "id": "local",
         "name": "local",
-        "testDir": "/home/ascendqe007/Documents/ui-api-db-project/src/tests",
+        "testDir": "/home/ascendqe-007/Documents/GitHub_Playwright_Repos/ui-api-db-testing/src/tests",
         "testIgnore": [],
         "testMatch": [
           "*ContactUsTest*"
@@ -42,7 +42,7 @@
         "timeout": 1200000
       },
       {
-        "outputDir": "/home/ascendqe007/Documents/ui-api-db-project/test-results/failure",
+        "outputDir": "/home/ascendqe-007/Documents/GitHub_Playwright_Repos/ui-api-db-testing/test-results/failure",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -50,7 +50,7 @@
         },
         "id": "suite",
         "name": "suite",
-        "testDir": "/home/ascendqe007/Documents/ui-api-db-project/src/tests",
+        "testDir": "/home/ascendqe-007/Documents/GitHub_Playwright_Repos/ui-api-db-testing/src/tests",
         "testIgnore": [],
         "testMatch": [
           "*.test.ts"
@@ -88,7 +88,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 17720,
+                  "duration": 11176,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -96,62 +96,62 @@
                   "steps": [
                     {
                       "title": "Launching the application",
-                      "duration": 6263,
+                      "duration": 3824,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 6256
+                          "duration": 3821
                         }
                       ]
                     },
                     {
                       "title": "Entering Contact Us details",
-                      "duration": 8626,
+                      "duration": 5869,
                       "steps": [
                         {
                           "title": "Selecting text Headphones from Category Dropdown",
-                          "duration": 6411
+                          "duration": 4270
                         },
                         {
                           "title": "Selecting text HP H2310 In-ear Headset from Product Dropdown",
-                          "duration": 1912
+                          "duration": 1362
                         },
                         {
                           "title": "Entering ContactUs email as headphone@test.com",
-                          "duration": 141
+                          "duration": 116
                         },
                         {
                           "title": "Entering ContactUs Subject as Headphones that I purchased recently is awesome. I would recommend this to my friends and family.",
-                          "duration": 153
+                          "duration": 113
                         }
                       ]
                     },
                     {
                       "title": "Click on Send button of Contact Us",
-                      "duration": 1074,
+                      "duration": 1033,
                       "steps": [
                         {
                           "title": "Clicking on Send Button",
-                          "duration": 1068
+                          "duration": 1030
                         }
                       ]
                     },
                     {
                       "title": "Verifying Success Message of Contact Us",
-                      "duration": 1349,
+                      "duration": 299,
                       "steps": [
                         {
                           "title": "Getting text content of ContactUs Success Message",
-                          "duration": 1336
+                          "duration": 294
                         },
                         {
                           "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
-                          "duration": 9
+                          "duration": 3
                         }
                       ]
                     }
                   ],
-                  "startTime": "2026-08-20T11:56:36.642Z",
+                  "startTime": "2026-11-03T06:40:06.334Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -162,7 +162,7 @@
                     {
                       "name": "Allure Metadata (metadata)",
                       "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZTAwNyJ9XX19"
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZS0wMDcifV19fQ=="
                     },
                     {
                       "name": "Allure Metadata (metadata)",
@@ -196,7 +196,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 13528,
+                  "duration": 12036,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -204,62 +204,62 @@
                   "steps": [
                     {
                       "title": "Launching the application",
-                      "duration": 3369,
+                      "duration": 4898,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 3367
+                          "duration": 4897
                         }
                       ]
                     },
                     {
                       "title": "Entering Contact Us details",
-                      "duration": 8537,
+                      "duration": 5719,
                       "steps": [
                         {
                           "title": "Selecting text Speakers from Category Dropdown",
-                          "duration": 5903
+                          "duration": 3645
                         },
                         {
                           "title": "Selecting text HP Roar Wireless Speaker from Product Dropdown",
-                          "duration": 2369
+                          "duration": 1845
                         },
                         {
                           "title": "Entering ContactUs email as speakers@test.com",
-                          "duration": 121
+                          "duration": 112
                         },
                         {
                           "title": "Entering ContactUs Subject as This is to inform you that Speakers that I purchased recently is defective. Please provide the replacement for it. Thanks!",
-                          "duration": 138
+                          "duration": 113
                         }
                       ]
                     },
                     {
                       "title": "Click on Send button of Contact Us",
-                      "duration": 1050,
+                      "duration": 1033,
                       "steps": [
                         {
                           "title": "Clicking on Send Button",
-                          "duration": 1049
+                          "duration": 1033
                         }
                       ]
                     },
                     {
                       "title": "Verifying Success Message of Contact Us",
-                      "duration": 321,
+                      "duration": 296,
                       "steps": [
                         {
                           "title": "Getting text content of ContactUs Success Message",
-                          "duration": 314
+                          "duration": 292
                         },
                         {
                           "title": "Verifying that ContactUs Success Message has text Thank you for contacting Advantage support.",
-                          "duration": 5
+                          "duration": 2
                         }
                       ]
                     }
                   ],
-                  "startTime": "2026-08-20T11:56:54.823Z",
+                  "startTime": "2026-11-03T06:40:17.770Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -270,7 +270,7 @@
                     {
                       "name": "Allure Metadata (metadata)",
                       "contentType": "application/vnd.allure.message+json",
-                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZTAwNyJ9XX19"
+                      "body": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6Im93bmVyIiwidmFsdWUiOiJhc2NlbmRxZS0wMDcifV19fQ=="
                     },
                     {
                       "name": "Allure Metadata (metadata)",
@@ -293,8 +293,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-20T11:56:34.544Z",
-    "duration": 34092.71,
+    "startTime": "2026-11-03T06:40:05.425Z",
+    "duration": 24499.810999999998,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,
